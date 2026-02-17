@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Logo Options | Simion Karoza</title>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;700;900&family=Fira+Code:wght@500&family=Playfair+Display:wght@700&display=swap"
+    rel="stylesheet">
+  <style>
+    :root {
+      --bg-color: #0f172a;
+      --text-color: #e2e8f0;
+      --accent-color: #38bdf8;
+      --secondary-accent: #818cf8;
+    }
+
+    body {
+      font-family: 'Outfit', sans-serif;
+      background-color: var(--bg-color);
+      color: var(--text-color);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 4rem 2rem;
+      gap: 4rem;
+    }
+
+    h1 {
+      margin-bottom: 2rem;
+      color: #94a3b8;
+      font-weight: 300;
+    }
+
+    .option-container {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      width: 100%;
+      max-width: 600px;
+      padding: 2rem;
+      background: rgba(30, 41, 59, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 1rem;
+    }
+
+    .label {
+      min-width: 100px;
+      font-weight: 600;
+      color: #64748b;
+    }
+
+    /* --- Option 1: Modern Gradient (Current Enhanced) --- */
+    .logo-1 {
+      font-size: 2rem;
+      font-weight: 900;
+      background: linear-gradient(to right, var(--accent-color), var(--secondary-accent));
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -1px;
+    }
+
+    /* --- Option 2: Tech/Code Monospace --- */
+    .logo-2 {
+      font-family: 'Fira Code', monospace;
+      font-size: 1.8rem;
+      font-weight: 500;
+      color: var(--accent-color);
+      border: 1px solid var(--accent-color);
+      padding: 0.2rem 0.8rem;
+      border-radius: 4px;
+      background: rgba(56, 189, 248, 0.1);
+    }
+
+    /* --- Option 3: Elegant Serif --- */
+    .logo-3 {
+      font-family: 'Playfair Display', serif;
+      font-size: 2.5rem;
+      font-weight: 700;
+      color: #f8fafc;
+      letter-spacing: -2px;
+      position: relative;
+    }
+
+    .logo-3 span {
+      color: var(--accent-color);
+    }
+
+    /* --- Option 4: Neon Glow --- */
+    .logo-4 {
+      font-size: 2rem;
+      font-weight: 700;
+      color: #fff;
+      text-shadow: 0 0 10px var(--accent-color), 0 0 20px var(--accent-color);
+      letter-spacing: 2px;
+      border: 2px solid #fff;
+      padding: 0.25rem 0.5rem;
+      box-shadow: 0 0 10px var(--accent-color), inset 0 0 10px var(--accent-color);
+    }
+
+    /* --- Option 5: Abstract Circle --- */
+    .logo-5 {
+      width: 60px;
+      height: 60px;
+      background: linear-gradient(135deg, var(--accent-color), var(--secondary-accent));
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: 900;
+      font-size: 1.5rem;
+      color: var(--bg-color);
+      box-shadow: 0 4px 20px rgba(56, 189, 248, 0.4);
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>Pick Your Logo Style</h1>
+
+  <div class="option-container">
+    <div class="label">Option 1</div>
+    <div class="logo-1">SK</div>
+    <p style="margin-left: auto; color: #64748b; font-size: 0.9rem;">Modern Gradient</p>
+  </div>
+
+  <div class="option-container">
+    <div class="label">Option 2</div>
+    <div class="logo-2">&lt;SK /&gt;</div>
+    <p style="margin-left: auto; color: #64748b; font-size: 0.9rem;">Tech / Code</p>
+  </div>
+
+  <div class="option-container">
+    <div class="label">Option 3</div>
+    <div class="logo-3">S<span>K</span>.</div>
+    <p style="margin-left: auto; color: #64748b; font-size: 0.9rem;">Elegant Serif</p>
+  </div>
+
+  <div class="option-container">
+    <div class="label">Option 4</div>
+    <div class="logo-4">SK</div>
+    <p style="margin-left: auto; color: #64748b; font-size: 0.9rem;">Neon Glow</p>
+  </div>
+
+  <div class="option-container">
+    <div class="label">Option 5</div>
+    <div class="logo-5">sk</div>
+    <p style="margin-left: auto; color: #64748b; font-size: 0.9rem;">Circle Badge</p>
+  </div>
+
+</body>
+
+</html>
